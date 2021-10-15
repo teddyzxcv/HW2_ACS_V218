@@ -1,0 +1,3 @@
+Sorted container:
+Container contains 1 elements.
+0: It is a functional language: TIOBI = 100.000000. Year of creation = 200 . Years divide count letters in the name = 20.000000. Type = Static. Is lazy calculation support = Yes

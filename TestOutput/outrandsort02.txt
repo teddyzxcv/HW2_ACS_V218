@@ -1,0 +1,5 @@
+Sorted container:
+Container contains 3 elements.
+0: It is a object oriented language: TIOBI = 85.000000. Year of creation = 1318 . Years divide count letters in the name = 94.142857. Inheritance = Multiple
+1: It is a functional language: TIOBI = 17.000000. Year of creation = 269 . Years divide count letters in the name = 26.900000. Type = Dynamic. Is lazy calculation support = Yes
+2: It is a functional language: TIOBI = 49.000000. Year of creation = 202 . Years divide count letters in the name = 20.200000. Type = Static. Is lazy calculation support = Yes

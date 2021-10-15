@@ -1,0 +1,23 @@
+Languages:
+Container contains 21 elements.
+1: It is a object oriented language: TIOBI = 31. Year of creation = 710. Years divide count letters in the name = 50.7143. Is abstract type exist = 0
+2: It is a object oriented language: TIOBI = 48. Year of creation = 710. Years divide count letters in the name = 50.7143. Inheritance = 3
+3: It is a object oriented language: TIOBI = 40. Year of creation = 1413. Years divide count letters in the name = 100.929. Is abstract type exist = 0
+4: It is a functional language: TIOBI = 21. Year of creation = 940. Years divide count letters in the name = 94. Type = 1. is lazy calculation support0
+5: It is a object oriented language: TIOBI = 99. Year of creation = 267. Years divide count letters in the name = 19.0714. Inheritance = 3
+6: It is a functional language: TIOBI = 15. Year of creation = 1977. Years divide count letters in the name = 197.7. Type = 2. is lazy calculation support1
+7: It is a object oriented language: TIOBI = 51. Year of creation = 1301. Years divide count letters in the name = 92.9286. Is abstract type exist = 1
+8: It is a object oriented language: TIOBI = 52. Year of creation = 1061. Years divide count letters in the name = 75.7857. Is abstract type exist = 0
+9: It is a functional language: TIOBI = 66. Year of creation = 881. Years divide count letters in the name = 88.1. Type = 1. is lazy calculation support0
+10: It is a object oriented language: TIOBI = 52. Year of creation = 804. Years divide count letters in the name = 57.4286. Is abstract type exist = 1
+11: It is a object oriented language: TIOBI = 36. Year of creation = 1632. Years divide count letters in the name = 116.571. Inheritance = 3
+12: It is a object oriented language: TIOBI = 10. Year of creation = 436. Years divide count letters in the name = 31.1429. Is abstract type exist = 0
+13: It is a object oriented language: TIOBI = 98. Year of creation = 1709. Years divide count letters in the name = 122.071. Is abstract type exist = 1
+14: It is a functional language: TIOBI = 25. Year of creation = 1878. Years divide count letters in the name = 187.8. Type = 2. is lazy calculation support0
+15: It is a object oriented language: TIOBI = 53. Year of creation = 1163. Years divide count letters in the name = 83.0714. Inheritance = 3
+16: It is a object oriented language: TIOBI = 9. Year of creation = 576. Years divide count letters in the name = 41.1429. Inheritance = 3
+17: It is a object oriented language: TIOBI = 74. Year of creation = 1456. Years divide count letters in the name = 104. Is abstract type exist = 0
+18: It is a object oriented language: TIOBI = 13. Year of creation = 1663. Years divide count letters in the name = 118.786. Is abstract type exist = 1
+19: It is a functional language: TIOBI = 100. Year of creation = 1842. Years divide count letters in the name = 184.2. Type = 2. is lazy calculation support1
+20: It is a object oriented language: TIOBI = 19. Year of creation = 249. Years divide count letters in the name = 17.7857. Is abstract type exist = 0
+21: It is a object oriented language: TIOBI = 61. Year of creation = 1033. Years divide count letters in the name = 73.7857. Inheritance = 3
