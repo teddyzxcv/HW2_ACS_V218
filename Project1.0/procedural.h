@@ -9,25 +9,25 @@
 #include "stdlib.h"
 #include "time.h"
 #include "string.h"
+#include "programminglanguages.h"
 
 //------------------------------------------------------------------------------
 // процедурный язык
-struct procedural {
-    double tiobi;
-    int yearofcreation;
+class procedural : public programminglanguages {
+public:
     bool isAbstractTypeExist;
-};
 
 // Ввод параметров процедурный язык из файла
-void In(procedural *l, FILE *f);
+    static void In(procedural *l, FILE *f);
 
 // Случайный ввод параметров процедурный язык
-void InRnd(procedural *l);
+    static void InRnd(procedural *l);
 
 // Вывод параметров процедурный язык в форматируемый поток
-void Out(procedural *l, FILE *f);
+   void Out(procedural *l, FILE *f);
 
 // Вычисление частное от деления года создания на количество символов в названии
-double YearsDivideLetters(procedural *l);
+};
+
 
 #endif //PROJECT_PROCEDURAL_H

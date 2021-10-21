@@ -1,5 +1,7 @@
 
 #include "container.h"
+#include "procedural.h"
+#include "programminglanguages.h"
 
 const char testroot[100] = "./../../TestInput/", resroot[100] = "./../../TestOutput/";
 
@@ -12,7 +14,6 @@ int main(int argc, char *argv[]) {
         error();
         return 1;
     }
-
     // Собираем адреса файлов.
     char testPath[200], resPath1[200], resPath2[200];
     strcpy(testPath, testroot);
@@ -21,7 +22,6 @@ int main(int argc, char *argv[]) {
     strcat(testPath, argv[2]);
     strcat(resPath1, argv[3]);
     strcat(resPath2, argv[4]);
-
     printf("Program started!\n");
     container *c = new container;
     FILE *f;

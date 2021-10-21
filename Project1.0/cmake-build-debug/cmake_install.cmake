@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/teddyzxcv/Documents/GitHub/HW1_ACS_V218/Project1.0
+# Install script for directory: /mnt/c/Users/teddyzxcv/Downloads/HW2_ACS_V218/Project1.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/teddyzxcv/Documents/GitHub/HW1_ACS_V218/Project1.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/teddyzxcv/Downloads/HW2_ACS_V218/Project1.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
