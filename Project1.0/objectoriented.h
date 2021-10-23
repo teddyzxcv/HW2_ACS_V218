@@ -10,30 +10,29 @@
 #include "stdlib.h"
 #include "time.h"
 #include "string.h"
+#include "programminglanguages.h"
 
 //------------------------------------------------------------------------------
 // объектно-ориентированный язык
-struct objectoriented {
-    double tiobi;
-    int yearofcreation;
+class objectoriented : public programminglanguages {
+public:
     enum Inheritance {
         SINGLE = 1,
         MULTIPLE,
         INTERFACE
     } inheritance;
 
+//------------------------------------------------------------------------------
+// Вывод параметров объектно-ориентированный язык в поток
+    void Out(FILE *f) override;
+
+    void In(FILE *f);
+
+    void InRnd();
+
+    objectoriented() : programminglanguages() {
+        this->countname = 14;
+    }
 };
-
-// Ввод параметров объектно-ориентированный язык из файла
-void In(objectoriented *l, FILE *f);
-
-// Случайный ввод параметров объектно-ориентированный язык
-void InRnd(objectoriented *l);
-
-// Вывод параметров объектно-ориентированный язык в форматируемый поток
-void Out(objectoriented *l, FILE *f);
-
-// Вычисление частное от деления года создания на количество символов в названии
-double YearsDivideLetters(objectoriented *l);
 
 #endif //PROJECT_OBJECTORIENTED_H

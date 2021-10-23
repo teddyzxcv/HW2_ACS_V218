@@ -30,17 +30,17 @@ int main(int argc, char *argv[]) {
     if (!strcmp(argv[1], "-f")) {
         f = fopen(testPath, "r");
         fscanf(f, "%d", &size);
-        Init(c, &size);
-        In(c, &size, f);
+        c->Init(&size);
+        c->In(&size, f);
     } else if (!strcmp(argv[1], "-n")) {
         size = atoi(argv[2]);
         if ((size < 1) || (size > 10000)) {
             printf("Number of languages has to be between 1 and 10000");
             return 3;
         }
-        Init(c, &size);
+        c->Init(&size);
         srand(static_cast<unsigned int>(time(0)));
-        InRnd(c, &size);
+        c->InRnd(&size);
     } else {
         error();
         return 2;
@@ -49,16 +49,17 @@ int main(int argc, char *argv[]) {
     // Вывод всех языки
     f = fopen(resPath1, "w+");
     fprintf(f, "Filled container:\n");
-    Out(c, f);
+    c->Out(f);
     fclose(f);
 
     // Вывод отсортированных языки
     f = fopen(resPath2, "w+");
     fprintf(f, "Sorted container:\n");
-    BinaryInsertion(c);
-    Out(c, f);
+    c->BinaryInsertion();
+    c->Out(f);
+    fclose(f);
 
-    Clear(c);
+    c->Clear();
     printf("Stop\n");
     return 0;
 }

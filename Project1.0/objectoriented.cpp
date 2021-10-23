@@ -6,24 +6,24 @@
 
 //------------------------------------------------------------------------------
 // Ввод параметров объектно-ориентированный язык из потока
-void In(objectoriented *s, FILE *f) {
+void objectoriented::In(FILE *f) {
     int inheritance;
-    fscanf(f, "%lf%d%i", &(s->tiobi), &(s->yearofcreation), &(inheritance));
-    s->inheritance = static_cast<objectoriented::Inheritance>(inheritance);
+    fscanf(f, "%lf%d%i", &(this->tiobi), &(this->yearofcreation), &(inheritance));
+    this->inheritance = static_cast<objectoriented::Inheritance>(inheritance);
 }
 
 // Случайный ввод параметров объектно-ориентированный язык
-void InRnd(objectoriented *s) {
-    s->tiobi = Random(100);
-    s->yearofcreation = Random(2021);
-    s->inheritance = static_cast<objectoriented::Inheritance>(Random(3));
+void objectoriented::InRnd() {
+    this->tiobi = Random(100);
+    this->yearofcreation = Random(2021);
+    this->inheritance = static_cast<objectoriented::Inheritance>(Random(3));
 }
 
 //------------------------------------------------------------------------------
 // Вывод параметров объектно-ориентированный язык в поток
-void Out(objectoriented *s, FILE *f) {
+void objectoriented::Out(FILE *f) {
     char inher[100] = "";
-    switch (s->inheritance) {
+    switch (this->inheritance) {
         case 1:
             strcpy(inher, "Single");
             break;
@@ -36,12 +36,7 @@ void Out(objectoriented *s, FILE *f) {
     }
     fprintf(f, "It is a object oriented language: TIOBI = %f. "
                "Year of creation = %d . Years divide count letters in the name = %f. Inheritance = %s\n",
-            s->tiobi, s->yearofcreation,
-            YearsDivideLetters(s), inher);
+            this->tiobi, this->yearofcreation,
+            this->YearsDivideLetters(), inher);
 }
 
-//------------------------------------------------------------------------------
-// Вычисление частное от деления года создания на количество символов в названии
-double YearsDivideLetters(objectoriented *s) {
-    return double(double(s->yearofcreation) / 14);
-}

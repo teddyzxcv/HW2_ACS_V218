@@ -2,6 +2,9 @@
 #define PROJECT_CONTAINER_H
 
 #include "programminglanguages.h"
+#include "objectoriented.h"
+#include "functional.h"
+#include "procedural.h"
 
 //------------------------------------------------------------------------------
 // Инициализация
@@ -29,7 +32,12 @@ public:
 // Сортировка бинарными вставками по убыванием.
     void BinaryInsertion();
 
-// Бинарный поиск контейнера по частное от деления года создания на количество символов в названии
+    static programminglanguages *Inlanguage(int *size, FILE *f);
+
+    static programminglanguages *InlanguageRnd(int *size);
+
+
+    // Бинарный поиск контейнера по частное от деления года создания на количество символов в названии
     int BinarySearch(programminglanguages *item, int l_border, int r_border);
 };
 

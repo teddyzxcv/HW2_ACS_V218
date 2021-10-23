@@ -17,16 +17,18 @@ class procedural : public programminglanguages {
 public:
     bool isAbstractTypeExist;
 
-// Ввод параметров процедурный язык из файла
-    static void In(procedural *l, FILE *f);
+//------------------------------------------------------------------------------
+// Вывод параметров процедурный язык в поток
+    void Out(FILE *f) override;
 
-// Случайный ввод параметров процедурный язык
-    static void InRnd(procedural *l);
 
-// Вывод параметров процедурный язык в форматируемый поток
-   void Out(procedural *l, FILE *f);
+    void In(FILE *f);
 
-// Вычисление частное от деления года создания на количество символов в названии
+    void InRnd();
+
+    procedural() : programminglanguages() {
+        this->countname = 10;
+    }
 };
 
 

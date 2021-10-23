@@ -10,33 +10,34 @@
 #include "stdlib.h"
 #include "time.h"
 #include "string.h"
+#include "programminglanguages.h"
 
 
 //------------------------------------------------------------------------------
 // функцианальный язык
 //------------------------------------------------------------------------------
 
-struct functional {
-    double tiobi;
-    int yearofcreation;
+class functional : public programminglanguages {
+public:
     enum Types {
         DYNAMIC = 1,
         STATIC = 2
     } type;
     bool isLazySupport;
-};
 
-//------------------------------------------------------------------------------
-// Ввод параметров функцианальный язык из файла
-void In(functional *l, FILE *f);
+    void Out(FILE *f) override;
 
-// Случайный ввод параметров функцианальный язык
-void InRnd(functional *l);
+    void In(FILE *f);
+
+    void InRnd();
 
 // Вывод параметров функцианальный язык в форматируемый поток
-void Out(functional *l, FILE *f);
+    functional() : programminglanguages() {
+        this->countname = 10;
+    }
 
-// Вычисление частное от деления года создания на количество символов в названии
-double YearsDivideLetters(functional *l);
+
+};
+
 
 #endif //PROJECT_FUNCTIONAL_H

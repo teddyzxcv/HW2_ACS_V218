@@ -8,8 +8,10 @@
 
 //------------------------------------------------------------------------------
 // Вычисление частное от деления года создания на количество символов в названии
-double programminglanguages::YearsDivideLetters() {
-    return double(double(this->yearofcreation) / countname));
+double programminglanguages::YearsDivideLetters() const {
+    return double(double(this->yearofcreation) / countname);
 }
+
+
 
 

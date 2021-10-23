@@ -1,3 +1,3 @@
-/mnt/c/Users/teddyzxcv/Downloads/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/teddyzxcv/Downloads/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/teddyzxcv/Downloads/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/Project1_0.dir
+/mnt/c/Users/teddyzxcv/Documents/GitHub/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/teddyzxcv/Documents/GitHub/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/teddyzxcv/Documents/GitHub/HW2_ACS_V218/Project1.0/cmake-build-debug/CMakeFiles/Project1_0.dir
