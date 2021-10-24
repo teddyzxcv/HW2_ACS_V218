@@ -10,6 +10,9 @@ void error() {
 }
 
 int main(int argc, char *argv[]) {
+    clock_t start, end;
+    double cpu_time_used;
+    start = clock();
     if (argc != 5) {
         error();
         return 1;
@@ -61,6 +64,9 @@ int main(int argc, char *argv[]) {
 
     c->Clear();
     printf("Stop\n");
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Time used: %.20f", cpu_time_used);
     return 0;
 }
 
